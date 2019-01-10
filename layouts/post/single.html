@@ -1,0 +1,14 @@
+{{ partial "header.html" . }}
+<div class="featured_image">
+<figure id="post-hero" style="background:url({{ .Params.featured_image }}) no-repeat fixed top center; background-size:cover;">
+</div>
+<main>
+</figure>
+  
+<h1 class="post-title">{{ .Title }}</h1>
+<section id="post-content">
+{{ .Content }}
+</section>
+<hr>
+</main>
+{{ partial "footer.html" . }}
