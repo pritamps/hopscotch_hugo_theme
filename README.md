@@ -1,0 +1,3 @@
+# Hopscotch theme
+
+This repository contains the theme I am developing to use on my personal website.
