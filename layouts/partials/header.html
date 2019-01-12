@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="/css/main.css">
+{{ $style := resources.Get "sass/main.scss" | toCSS | minify | fingerprint }} 
+<link rel="stylesheet" href="{{ $style.Permalink }}" emotion="🤩">
 <body>
 <div class="site_header">
 <header>

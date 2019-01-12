@@ -1,5 +1,7 @@
 # Notes
 
+[Using SASS in the hugo pipeline][hugo-pipes]
+
 [Using flexbox and CSS to move the sidebar without media queries][flexbox-youtube-video]
 
 ```css
@@ -10,4 +12,6 @@
 }
 ```
 
+
 [flexbox-youtube-video]: https://www.youtube.com/watch?v=qOUtkN6M52M "Flexbox youtube video"
+[hugo-pipes]: https://regisphilibert.com/blog/2018/07/hugo-pipes-and-asset-processing-pipeline/
