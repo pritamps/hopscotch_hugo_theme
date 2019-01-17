@@ -5,11 +5,22 @@
 <body>
 <div class="site_header">
 <header>
-    <div class="site-links">    
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/posts/">Blog</a>
-    <a href="/contact/">Contact Me</a>
+    <nav class="nav nav--top">
+
+    <label for="show-menu" class="show-menu">Show Menu</label>
+    <input type="checkbox" id="show-menu" role="button">
+      <ul id="menu">   
+        <li><a href="/">Home</a></li>
+        <li><a href="">More Info</a>
+          <ul class=hidden>
+            <li><a href ="/about/"> About Me </a></li>
+            <li><a href ="/now/"> Now </a></li>
+          </ul>
+        </li>
+        <li><a href="/posts/">Blog</a></li>
+        <li><a href="/contact/">Contact Me</a></li>
+      </ul>
+    </nav>
     </div>
     <div class="social-links">
         <a target="_blank" href="https://www.instagram.com/pritamps/">instagram</a>

@@ -1,7 +1,6 @@
 // ---- COLORS BEGIN ----
 
 // Greys
-
 $darkest-grey: #202020;
 $darker-grey: #383838;
 $dark-grey: #606060;
@@ -11,9 +10,13 @@ $lighter-grey: #c8c8c8;
 $lightest-grey: #dcdcdc;
 
 // Blues
-
 $darkest-blue: #303030;
 $dark-blue: #585858;
 $blue: #808080;
 $light-blue: #a9a9a9;
 $lightest-blue: #dcdcdc;
+
+// Animations
+@mixin easeOut {
+  transition: all 0.5s ease-in;
+}
