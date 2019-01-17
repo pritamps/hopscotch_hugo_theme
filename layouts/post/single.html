@@ -1,11 +1,16 @@
 {{ partial "header.html" . }}
-<div class="featured_image">
-<figure id="post-hero" style="background:url({{ .Params.featured_image }}) no-repeat fixed top center; background-size:cover;">
-</div>
+
 <main>
 </figure>
   
+<section id="post-header">
 <h1 class="post-title">{{ .Title }}</h1>
+<div class="featured_image">
+<figure id="post-hero" class="wp-caption alignnone">
+<img src="{{ .Params.featured_image }}" alt="Winding roads along the Panj river"></figure>
+</div>
+</section>
+
 <section id="post-content">
 {{ .Content }}
 </section>

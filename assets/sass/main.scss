@@ -1,8 +1,74 @@
 @import "config";
 @import "menu";
 
+
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+  background: $darkest-grey;
+  color: $light-grey;
 }
 
-@import "mobile";
+a {
+  color: $lightest-grey;
+  text-decoration: none;
+
+  &:hover {
+      color: $lighter-grey;
+  }
+}
+
+// ---- POST FORMATTING BEGIN ----
+#post-content {
+  width: 100%;
+  margin: 0 auto;
+
+  img {
+    display: block;
+    width: 100%;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  figure {
+    margin: 0;
+    margin-bottom: 3em;
+    margin-top: 2em;
+  }
+
+  p {
+    line-height: 1.5;
+    margin: 1.5em 1.5em;
+  }
+
+  figcaption {
+    font-size: 0.9em;
+    text-align: center;
+    margin: 0 1.5em;
+  }
+}
+
+#post-hero{
+  margin-left: auto;
+  margin-right: auto;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+#post-header {
+  text-align: center;
+  margin-bottom: 4em;
+
+  .post-title {
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }
+}
+
+// ---- POST FORMATTING END ----
+
+@import "non_mobile";
