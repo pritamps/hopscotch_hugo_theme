@@ -6,10 +6,11 @@
 * [Color palettes](https://refactoringui.com/previews/building-your-color-palette/)
 
 ## Links
-  
-[Using SASS in the hugo pipeline][hugo-pipes]
 
-[Using flexbox and CSS to move the sidebar without media queries][flexbox-youtube-video]
+* (COOL) [CSS Only hamburger menu](https://codepen.io/mutedblues/pen/MmPNPG)
+* (MEH) [Dropdown Responsive menu using only CSS](https://codepen.io/markcaron/pen/pPZVWO). Blog post explaining the Codepen is [here](https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger-menu-aebc8d11d793) 
+* [Using SASS in the hugo pipeline][hugo-pipes]
+* [Using flexbox and CSS to move the sidebar without media queries][flexbox-youtube-video]
 
 ```css
 .grid {
