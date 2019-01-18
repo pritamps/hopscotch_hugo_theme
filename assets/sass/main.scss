@@ -4,19 +4,10 @@
 
 body {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  margin: 0;
   background: $darkest-grey;
   color: $light-grey;
 }
 
-a {
-  color: $lightest-grey;
-  text-decoration: none;
-
-  &:hover {
-      color: $lighter-grey;
-  }
-}
 
 // ---- POST FORMATTING BEGIN ----
 #post-content {
@@ -46,6 +37,15 @@ a {
     font-size: 0.9em;
     text-align: center;
     margin: 0 1.5em;
+  }
+
+  a {
+    color: $lightest-grey;
+    text-decoration: none;
+  
+    &:hover {
+        color: $lighter-grey;
+    }
   }
 }
 

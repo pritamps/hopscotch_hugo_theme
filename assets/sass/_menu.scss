@@ -9,63 +9,114 @@ main {
 }
 
 a {
-  color: #000;
+  color: $dark-grey;
 }
 
 /* header */
-
 .header {
-  background-color: $darkest-grey;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  background-color: rgba($darkest-grey,0.95);
+  // box-shadow: 0px 0px 1px 0 rgba(255,255, 255,1);
   position: fixed;
   top: 0;
-  width: 100%;
+  left: 0;
+  right: 0;
+  margin: 0;
+  height:120px;
+  max-width: 100%;
   z-index: 3;
-  font-family: Helvetica, sans-serif;
   // box-shadow: 0 5px 2px -2px rgba(0,0,0,.3);
+
+  .logo_and_social{
+    // width: 100%;
+    height: auto;
+  }
+
+  .nav_menu {
+    width: 100%;
+
+    li {
+      display: block;
+      text-transform: uppercase;
+      background: rgba($darkest-grey, 0.95);
+    }
+  }
+}
+
+.header .nav_menu ul li {
+  a {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+}
+
+header {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: Helvetica, sans-serif;
+  color: $dark-grey;
 }
 
 .header ul {
   margin: 0;
   padding: 0;
+  font-size: 1.2em;
   list-style: none;
   overflow: hidden;
-  background-color: $darkest-grey;
+  color: $dark-grey;
 }
 
-.header li a {
-  display: block;
-  padding: 20px 20px;
-  text-decoration: none;
+.header .social_menu {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.header li a:hover,
+.header .social_menu li {
+  float: right;
+  padding: 20px 0px;
+  text-transform: uppercase;
+  a {
+    padding: 5px 5px;
+    text-decoration: none;
+  }
+
+  &:first-child a{
+    padding: 5px 5px 0px 5px;
+  }
+
+  &:last-child a{
+    padding: 5px 5px 5px 0px;
+  }
+}
+
+.header a:hover,
 .header .menu-btn:hover {
-  background-color: $dark-grey;
+  color: $lightest-grey;
 }
 
 .header .logo {
   display: block;
   float: left;
-  font-size: 2em;
-  padding: 10px 20px;
+  font-size: 1.6em;
+  padding: 18px 0px;
   text-decoration: none;
 }
 
 /* menu */
-
 .header .menu {
   clear: both;
   max-height: 0;
-  transition: max-height .2s ease-out;
+  @include easeOut();
 }
 
 /* menu icon */
 .header .menu-icon {
   cursor: pointer;
-  display: inline-block;
-  float: right;
-  padding: 28px 20px;
+  display: block;
+  width: 100%;
+  float: left;
+  padding: 28px 0px;
   position: relative;
   user-select: none;
 }
@@ -75,7 +126,7 @@ a {
   display: block;
   height: 2px;
   position: relative;
-  transition: background .2s ease-out;
+  @include easeOut();
   width: 18px;
 }
 
@@ -86,7 +137,7 @@ a {
   display: block;
   height: 100%;
   position: absolute;
-  transition: all .2s ease-out;
+  @include easeOut();
   width: 100%;
 }
 
@@ -125,19 +176,43 @@ a {
   top: 0;
 }
 
+.header_spacer {
+  height:65px;
+  width:100%;
+}
+
+
+
 /* LARGE SCREENS: 48em = 768px */
-@media (min-width: 48em) {
-  .header li {
-    float: left;
+@include mediaMd {
+
+  header {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .header li a {
-    padding: 20px 30px;
-  }
+
   .header .menu {
     clear: none;
-    float: right;
+    float: left;
+    width: 100%;
     max-height: none;
+    overflow: hidden;
+    
+    li {
+      float: left;
+      background: none;
+      
+      &:first-child a{
+        padding: 10px 15px 10px 0px;
+      }
+    
+      &:last-child a{
+        padding: 10px 15px 10px 15px;
+      }
+    }
   }
+  
   .header .menu-icon {
     display: none;
   }

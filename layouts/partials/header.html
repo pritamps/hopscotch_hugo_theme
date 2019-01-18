@@ -2,15 +2,37 @@
 <html>
 {{ $style := resources.Get "sass/main.scss" | toCSS | minify | fingerprint }} 
 <link rel="stylesheet" href="{{ $style.Permalink }}" emotion="🤩">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width">
+
 <body>
-<header class="header">
-  <a href="" class="logo">CSS Nav</a>
-  <input class="menu-btn" type="checkbox" id="menu-btn" />
+<div class="header">
+<header>
+<div class="logo_and_social">
+  <a href="/" class="logo">HOPSCOTCH</a>
+  
+  <ul class="social_menu">
+    <li><a href="/"><i class="fa fa-instagram fa-lg"></i></a></li>
+    <li><a href="/about/"><i class="fa fa-github fa-lg"></i></a></li>
+    <li><a href="/posts"><i class="fa fa-twitter fa-lg"></i></a></li>
+    <li><a href="/contact/"><i class="fa fa-facebook fa-lg"></i></a></li>
+  </ul>
+</div>
+
+<div class="nav_menu">
+<input class="menu-btn" type="checkbox" id="menu-btn" />
   <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
   <ul class="menu">
-    <li><a href="/">Home</a></li>
-    <li><a href="/about/">About</a></li>
     <li><a href="/posts">Blog</a></li>
+    <li><a href="/about/">About</a></li>
+    <li><a href="/now/">Now</a></li>
     <li><a href="/contact/">Contact</a></li>
+  
   </ul>
+  </div>
+
+
 </header>
+</div>
+<div class="header_spacer">
+</div>
