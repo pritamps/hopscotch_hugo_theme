@@ -70,4 +70,29 @@ body {
 
 // ---- POST FORMATTING END ----
 
-@import "non_mobile";
+@include mediaMd {
+
+  #post-header {
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  #post-content {
+    width: 60%;
+    margin-top: 0em;
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-top: 4em;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient($darker-grey, $darkest-grey 800px);
+    // background: -webkit-linear-gradient($lightest-grey,$darkest-grey, 2800px);
+    p {
+      margin-top: 0;
+    }
+  }
+
+  p {
+    padding-left: 10em;
+    padding-right: 10em;
+  }
+}
