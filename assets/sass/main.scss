@@ -10,7 +10,7 @@ body {
 
 
 // ---- POST FORMATTING BEGIN ----
-#post-content {
+#post-outer {
   width: 100%;
   margin: 0 auto;
 
@@ -30,7 +30,7 @@ body {
 
   p {
     line-height: 1.5;
-    margin: 1.5em 1.5em;
+    // margin: 1.5em 1.5em;
   }
 
   figcaption {
@@ -76,23 +76,22 @@ body {
     text-align: center;
     margin-bottom: 0px;
   }
-  #post-content {
-    width: 60%;
+
+  #post-outer {
+    max-width: 768px;
     margin-top: 0em;
-    padding-left: 4em;
-    padding-right: 4em;
     padding-top: 4em;
     margin-left: auto;
     margin-right: auto;
     background: linear-gradient($darker-grey, $darkest-grey 800px);
     // background: -webkit-linear-gradient($lightest-grey,$darkest-grey, 2800px);
-    p {
+    .post-content {
       margin-top: 0;
     }
   }
 
-  p {
-    padding-left: 10em;
-    padding-right: 10em;
+  .post-content {
+    padding-left: 1em;
+    padding-right: 1em;
   }
 }
