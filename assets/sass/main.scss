@@ -38,8 +38,9 @@ body {
 
   p {
     line-height: 1.5;
-    margin-left: 1.5em;
-    margin-right:  1.5em;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     text-align: justify;
   }
 
@@ -88,7 +89,6 @@ body {
 
 .post-content {
   padding: 0em;
-
 }
 
 // ---- Media Queries begin ----
