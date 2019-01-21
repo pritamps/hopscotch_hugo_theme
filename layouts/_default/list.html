@@ -1,11 +1,13 @@
 {{ partial "header.html" . }}
 <nav></nav>
-<main>
- <h1 class="post-title">{{ .Title }}</h1>
-  <section id="full-width">
-    {{ range .Pages }}
-      {{ partial "post_thumbnail.html" . }}
-    {{ end }}      
-  </section>
+<main id="post-list">
+  <h1 class="post-title">{{ .Title }}</h1>
+  <div class="post-thumbnails">
+      {{ range .Pages }}
+      <div>
+        {{ partial "post_thumbnail.html" . }}
+      </div>
+      {{ end }}
+  </div>
 </main>
 {{ partial "footer.html" . }}

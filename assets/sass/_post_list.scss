@@ -1,0 +1,51 @@
+// ---- POST FORMATTING BEGIN ----
+
+.post-thumbnails {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 30px;
+}
+
+.post_thumbnail_image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+// ---- Media Queries begin ----
+@include mediaMd {
+
+  // .post-thumbnails {
+  // grid-template-columns: repeat(3, 1fr);
+  // grid-auto-rows: minmax(100px, 400px);
+  // }
+
+  #post-list {
+    max-width: 80vw;
+    width: 900px;
+    margin-top: 0em;
+    margin-left: auto;
+    margin-right: auto;
+
+    .post-content {
+      margin-top: 0;
+    }
+  }
+
+  .post-content {
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+
+    p,
+    h2,
+    h3,
+    h4,
+    ul {
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+  }
+}

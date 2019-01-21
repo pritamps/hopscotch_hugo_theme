@@ -1,7 +1,7 @@
 {{ partial "header.html" . }}
 <nav></nav>
 <main>
-<section id="full-width">
+<section id="post-outer">
   <h1 class="post-title">Most Recent Posts</h1>
   {{ range first 9 .Data.Pages }}
     {{ if eq .Type "post"}}
