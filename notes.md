@@ -7,6 +7,7 @@
 
 ## Links
 
+* (VERY COOL) [CSS Style Guide][style-guide]
 * (COOL) [CSS Only hamburger menu](https://codepen.io/mutedblues/pen/MmPNPG)
 * (MEH) [Dropdown Responsive menu using only CSS](https://codepen.io/markcaron/pen/pPZVWO). Blog post explaining the Codepen is [here](https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger-menu-aebc8d11d793) 
 * [Using SASS in the hugo pipeline][hugo-pipes]
@@ -27,3 +28,4 @@
 
 [flexbox-youtube-video]: https://www.youtube.com/watch?v=qOUtkN6M52M "Flexbox youtube video"
 [hugo-pipes]: https://regisphilibert.com/blog/2018/07/hugo-pipes-and-asset-processing-pipeline/
+[style-guide]: https://kaliop.github.io/frontend-style-guide/2.0/css/#important

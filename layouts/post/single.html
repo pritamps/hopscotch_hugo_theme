@@ -1,21 +1,27 @@
+{{ partial "head.html" . }}
 {{ partial "header.html" . }}
+{{ partial "nav.html" . }}
 
-<main id="post">
+<main>
   <section id="post-header">
-    <div class="featured_image">
-      <figure id="post-hero" class="wp-caption alignnone">
-        <img src="{{ .Params.featured_image }}"></figure>
+    <div id="hero">
+      <div class="hero_image">
+        {{ if isset .Params "featured_image" }}
+        <figure>
+          <img src="{{ .Params.featured_image }}">
+        </figure>
+        {{ end }}
+      </div>
+      <div class="post-title">
+        <h1>{{ .Title }}</h1>
+      </div>
     </div>
   </section>
 
   <section id="post-outer">
-    <div class="post-title">
-      <h1>{{ .Title }}</h1>
-    </div>
     <div class="post-content">
       {{ .Content }}
     </div>
   </section>
-  <hr>
 </main>
 {{ partial "footer.html" . }}

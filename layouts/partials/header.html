@@ -1,38 +1,26 @@
-<!DOCTYPE html>
-<html>
-{{ $style := resources.Get "sass/main.scss" | toCSS | minify | fingerprint }} 
-<link rel="stylesheet" href="{{ $style.Permalink }}" emotion="🤩">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<meta name="viewport" content="width=device-width">
-
 <body>
-<div class="header">
-<header>
-<div class="logo_and_social">
-  <a href="/" class="logo">HOPSCOTCH</a>
-  
-  <ul class="social_menu">
-    <li><a href="/"><i class="fa fa-instagram fa-lg"></i></a></li>
-    <li><a href="/about/"><i class="fa fa-github fa-lg"></i></a></li>
-    <li><a href="/posts"><i class="fa fa-twitter fa-lg"></i></a></li>
-    <li><a href="/contact/"><i class="fa fa-facebook fa-lg"></i></a></li>
-  </ul>
-</div>
+  <header class="hello">
+    <div class="header">
 
-<div class="nav_menu">
-<input class="menu-btn" type="checkbox" id="menu-btn" />
-  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-  <ul class="menu">
-    <li><a href="/posts">Blog</a></li>
-    <li><a href="/about/">About</a></li>
-    <li><a href="/now/">Now</a></li>
-    <li><a href="/contact/">Contact</a></li>
-  
-  </ul>
-  </div>
-
-
-</header>
-</div>
-<div class="header_spacer">
-</div>
+      <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+          <i class="fa fa-bars"></i>
+        </span>
+        <!-- <a href="#" class="logo">logo</a> -->
+        <ul class="main-nav" id="js-menu">
+          <li>
+            <a href="/" class="nav-links">Home</a>
+          </li>
+          <li>
+            <a href="/posts" class="nav-links">Blog</a>
+          </li>
+          <li>
+            <a href="/about" class="nav-links">About Me</a>
+          </li>
+          <li>
+            <a href="/now" class="nav-links">Now</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
