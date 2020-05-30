@@ -14,6 +14,14 @@ body {
   line-height: 1.5;
 }
 
+// For MathJax equations
+code.has-jax {font: inherit;
+  font-size: 100%;  
+  background: inherit;
+  border: inherit;
+  color: $light-grey;
+}
+
 // ---- POST FORMATTING BEGIN ----
 #post-outer {
   width: 100%;

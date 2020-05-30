@@ -7,6 +7,18 @@
 	&copy; Pritam Sukumar 2018
 </div>
 </footer>
+
+{{ if .Params.katex}} 
+HELLO
+{{ partial "katex.html" . }}
+{{ end }}
+
+{{ if .Params.mathjax}} 
+HELLO
+{{ partial "mathjax.html" . }}
+{{ end }}
+
 <script src="/js/main.js"></script>
+
 </body>
 </html>
