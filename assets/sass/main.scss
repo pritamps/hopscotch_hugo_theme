@@ -56,7 +56,7 @@ code.has-jax {font: inherit;
     margin-top: 2em;
   }
 
-  p {
+  p, .highlight {
     line-height: 1.5;
     max-width: 90%;
     margin-left: auto;
@@ -154,7 +154,8 @@ code.has-jax {font: inherit;
     h2,
     h3,
     h4,
-    ul {
+    ul,
+    .hightlight {
       max-width: 80%;
       margin-left: auto;
       margin-right: auto;
